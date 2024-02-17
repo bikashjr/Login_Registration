@@ -9,7 +9,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
-    const handelSubmit = async(e) => {
+    const handelSubmit = async (e) => {
         e.preventDefault();
         try {
             const result = await axios.post("http://localhost:9999/login", { email, password });
